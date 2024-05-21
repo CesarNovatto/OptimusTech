@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-cinza-texto: #667085;
+    --cor-branco-texto: #ffff;
+    --cor-de-fundo-2: #8E2424;
+    --cor-preto: #101828;
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.234);
+    padding: 2em 6em 2em 6em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar_imagem_links {
+    display: flex;
+    gap: 9em;
+}
+
+.navbar_links {
+    margin-top: 3.1px;
+}
+
+.navbar_links_link {
+    color: var(--cor-cinza-texto);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 1em;
+}
+
+.navbar_links_link:hover {
+    transition: .4s;
+    font-weight: 500;
+    color: #8E2424;
+}
+
+.navbar_butoes {
+    margin-top: 3.1px;
+}
+
+.navbar_butoes_botao_1 {
+    color: var(--cor-cinza-texto);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    margin-right: 1em;
+}
+
+.navbar_butoes_botao_2 {
+    color: var(--cor-branco-texto);
+    padding: 9px 15px;
+    border-radius: 6px;
+    background-color: var(--cor-de-fundo-2);
+}
+
+.navbar_responsiva {
+    display: none;
+}
+
+.cabecalho {
+    text-align: center;
+    margin: 9em 6em;
+}
+
+.cabecalho_info {
+    color: var(--cor-de-fundo-2);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cabecalho_titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: .9em;
+    margin-top: .5em;
+}
+
+.cabecalho_texto {
+    color: var(--cor-cinza-texto);
+    font-family: var(--fonte-principal);
+    font-weight: 400px;
+    line-height: 1.4em;
+}
+
+.metricas {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    margin: 0 6em;
+    font-family: var(--fonte-principal);
+}
+
+.metricas_container {
+    width: 230px;
+}
+
+.metricas_container_2 {
+    margin-right: 0;
+}
+
+.metricas_container_titulo {
+    color: var(--cor-de-fundo-2);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: .2em;
+}
+
+.metricas_container_texto_1 {
+    color: var(--cor-preto);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.metricas_container_texto_2 {
+    color: var(--cor-cinza-texto);
+    font-size: .9rem;
+    margin-top: .8em;
+    line-height: 1.3em;
+}
+
+.vagas {
+    font-family: var(--fonte-principal);
+    margin: 7em 0;
+}
+
+.vagas_talento {
+    text-align: center;
+    margin: 0 6em;
+}
+
+
+.vagas_talento_p1 {
+    color: var(--cor-de-fundo-2);
+    font-weight: 500;
+}
+
+.vagas_talento_titulo {
+    color: var(--cor-preto);
+    margin: 1em;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.vagas_talento_p2 {
+    color: var(--cor-cinza-texto);
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 4em;
+}
+
+.vagas_talento_imagem {
+    width: 100%;
+}
+
+.vagasAbertas {
+    margin: 4em 25% 0 25%;
+}
+
+.vagasAbertas_lista_titulo {
+    font-weight: 700;
+    color: var(--cor-preto);
+    margin-bottom: 1.6em;
+}
+
+.vagasAbertas_lista {
+    list-style-type: none;
+}
+
+.vagasAbertas_lista_item {
+    margin-bottom: 2em;
+    border: 1px solid rgba(128, 128, 128, 0.264);
+    padding: 1.6em;
+    border-radius: 10px;
+}
+
+.vagasAbertas_lista_item_titulo {
+    font-weight: 400;
+    margin-bottom: 1.6em;
+    color: var(--cor-preto);
+}
+
+.auxiliar_display {
+    display: flex;
+    gap: 1.5em;
+}
+
+.vagasAbertas_lista_item_texto {
+    font-weight: 400;
+    color: var(--cor-cinza-texto);
+}
+
+.depoimentos {
+    background-color: rgba(255, 0, 0, 0.042);
+    text-align: center;
+    margin: 0 6em;
+    padding: 4em 3em 3em 3em;
+    font-family: var(--fonte-principal);
+    border-radius: 1em;
+}
+
+.depoimentos_container_parte1_texto {
+    color: var(--cor-de-fundo-2);
+    font-weight: 700;
+    font-size: .9rem;
+    margin-bottom: 1.5em;
+}
+
+.depoimentos_container_parte1_titulo {
+    color: var(--cor-preto);
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 1.4em;
+}
+
+.depoimentos_container_parte2_nome {
+    color: var(--cor-preto);
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: .8em;
+}
+
+.depoimentos_container_parte2_cargo {
+    color: var(--cor-cinza-texto);
+    font-weight: 400;
+}
+
+.imagem_depoimentos {
+    width: 5%;
+    margin-bottom: 1em;
+}
+
+.formulario {
+    font-family: var(--fonte-principal);
+    text-align: center;
+    background-color: #d0d5dd38;
+    margin-top: 5em;
+    padding: 4em 3em;
+}
+
+.formulario_conteudo {
+    margin-bottom: 2em;
+}
+
+.formulario_conteudo_titulo {
+    color: var(--cor-preto);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: .5em;
+}
+
+.formulario_conteudo_texto {
+    color: var(--cor-cinza-texto);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.formulario_input_box {
+    padding: .8em;
+    border: 1px solid #66708588;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.formulario_input_button {
+    color: var(--cor-branco-texto);
+    background-color: var(--cor-de-fundo-2);
+    text-decoration: none;
+    padding: .6em;
+    border-radius: 8px;
+    margin-left: .6em;
+}
+
+.formulario_input_texto {
+    color: #6670859d;
+    font-weight: 400;
+    font-size: .9rem;
+    margin-top: 2em;
+}
+
+@media (max-width: 885px) {
+    .metricas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0.3em;
+    }
+
+    .metricas_container_texto_2 {
+        margin-bottom: 3em;
+    }
+
+    .imagem_depoimentos {
+        width: 3em;
+    }
+
+    .vagas {
+        margin: 3em 0;
+    }
+
+    .cabecalho {
+        margin: 9em 6em 4em 6em;
+    }
+}
+
+@media (max-width: 1020px) {
+    .navbar_links {
+        display: none;
+    }
+}
+
+@media (max-width: 627px) {
+    .auxiliar_display {
+        display: inline-block;
+        line-height: 30px;
+    }
+
+    .depoimentos_container_parte1_titulo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar {
+        padding: 1.5em 2em;
+    }
+
+    .navbar_butoes {
+        display: none;
+    }
+
+    .navbar_imagem_links {
+        display: none;
+    }
+
+    .navbar_responsiva {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 432px) {
+    .vagas_talento_titulo {
+        font-size: 1.5rem;
+    }
+
+    .vagas_talento_imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 487px) {
+    .depoimentos_container_parte1_titulo {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 458px) {
+    .cabecalho {
+        margin: 7em 1em;
+    }
+
+    .vagas_talento {
+        text-align: center;
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 403px) {
+    .depoimentos_container_parte2_cargo {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 447px) {
+    .depoimentos_container_parte1_texto {
+        display: none;
+    }
+
+    .depoimentos_container_parte1_titulo {
+        font-size: .9rem;
+    }
+
+    .vagasAbertas {
+        margin: 0 4em;
+    }
+}
+
+@media (max-width: 410px) {
+    .formulario_conteudo_titulo {
+        font-size: 1.5rem;
+    }
+    .depoimentos {
+        padding: 4em 1em 3em 1em;
+    }
+}
+
+@media (max-width: 365px) {
+    .depoimentos {
+        display: none;
+    }
+
+    .formulario_conteudo_titulo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .vagas_talento_titulo {
+        font-size: 1rem;
+    }
+
+    .cabecalho_titulo {
+        font-size: 1.5rem;
+    }
+
+    .vagasAbertas {
+        margin: 0 3em;
+    }
+}
